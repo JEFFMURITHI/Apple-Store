@@ -3,7 +3,7 @@ import { watchModels } from '../data/index'
 
 const Watch = () => {
   return (
-    <div className='flex flex-col items-center justify-around bg-white h-full py-8 px-4'>
+    <div className='flex flex-col items-center justify-around bg-white h-full py-4 px-4'>
         <h1 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-gray-800'>
             Which Apple watch is right for you?
         </h1>
@@ -11,7 +11,7 @@ const Watch = () => {
             {watchModels.map((watch,index)=>(
                 <div className={`w-60 h-[430px] flex flex-col justify-around group ${
                     index==2 ? 'hidden md:flex' : '' }`}>
-                    <div key={index} className='w-full h-64 mb-4 overflow-hidden relative'>
+                    <div key={index} className='w-full h-48 mb-4 overflow-hidden relative'>
                         <img
                            src={watch.imgs[0]}
                            alt={watch.name}
